@@ -7,7 +7,7 @@ const int MAX_BUKU = 5;
 
 struct Buku{
   string judul;
-  string penulis;
+  string peminjaman;
 };
 
 int main(){
@@ -16,9 +16,9 @@ int main(){
   int pilihan;
 
 do{
-  cout << "====Selamat Datang di Program Perpustakaan Kami====" << endl;
-  cout << "Menu Perpustakaan : "
-  cout << "1. Tambah Buku" << endl;
-  cout << "2. Tampilkan Daftar Buku" << endl;
+  cout << "......Selamat Datang di Program Perpustakaan......" << endl;
+  cout << "======== Menu Perpustakaan ======== "
+  cout << "1. Tampilkan Daftar Buku" << endl;
+  cout << "2. Pilih Buku" << endl;
   cout << "3. Keluar" << endl;
   cin >> pilihan
