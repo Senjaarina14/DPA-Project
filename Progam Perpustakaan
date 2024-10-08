@@ -22,3 +22,37 @@ do{
   cout << "2. Pilih Buku" << endl;
   cout << "3. Keluar" << endl;
   cin >> pilihan
+
+ if (pilihan == 1) {
+            if (jumlahBuku < MAX_BUKU) {
+                cout << "Daftar Buku: " << endl;
+                cout << "1. Pulang " << endl;
+                cout << "2. Hujan " << endl;
+                cout << "3. Pergi " << endl;
+                cout << "4. Bumi " << endl;
+                cout << "5. Laskar Pelangi " << endl;
+                cout << endl;
+            }
+ } else if (pilihan == 2) {
+            if (jumlahBuku == 0) {
+                cout << "-----Silahkan Pilih Buku-----: " << endl;
+                cout << "1. Pulang " << endl;
+                cout << "2. Hujan " << endl;
+                cout << "3. Pergi " << endl;
+                cout << "4. Bumi " << endl;
+                cout << "5. Laskar Pelangi " << endl;
+                cin.ignore();
+                getline(cin, buku[jumlahBuku].judul);
+                cout << "Masukkan tanggal peminjaman: ";
+                getline(cin, buku[jumlahBuku].peminjaman);
+                jumlahBuku++;
+                cout << "Buku '" << buku[jumlahBuku - 1].judul << "' berhasil dipinjam" << endl;
+            }
+ } else if (pilihan != 3) {
+            cout << "Opsi tidak valid. Silakan coba lagi";
+        }
+    } while (pilihan != 3);
+
+    cout << "Terima kasih! Sampai jumpa di perpustakaan!:D";
+    return 0;
+}
