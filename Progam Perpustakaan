@@ -23,3 +23,27 @@ int main(){
     cout << "2. Pilih Buku" << endl;
     cout << "3. Keluar" << endl;
     cin >> pilihan;
+
+if (pilihan == 1) {
+            if (jumlahBuku < MAX_BUKU) {
+                cout << "Daftar Buku**** " << endl;
+                cout << "1. Bumi Manusia " << endl;
+                cout << "2. Dilan 1990 " << endl;
+                cout << "3. Layangan Putus " << endl;
+                cout << "4. Laut Bercerita " << endl;
+                cout << "5. Laskar Pelangi " << endl;
+            }
+            
+        } else if (pilihan == 2) {
+            if (jumlahBuku == 0) {
+                cout << "-----Silahkan Pilih Buku----- " << endl;
+                cout << "1. Bumi Manusia " << endl;
+                cout << "2. Dilan 1990 " << endl;
+                cout << "3. Layangan Putus " << endl;
+                cout << "4. Laut Bercerita " << endl;
+                cout << "5. Laskar Pelangi " << endl;
+                cin.ignore();
+                getline(cin, buku[jumlahBuku].judul);
+
+
+
