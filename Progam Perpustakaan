@@ -32,6 +32,7 @@ if (pilihan == 1) {
                 cout << "3. Layangan Putus " << endl;
                 cout << "4. Laut Bercerita " << endl;
                 cout << "5. Laskar Pelangi " << endl;
+                cout << endl;
             }
             
         } else if (pilihan == 2) {
