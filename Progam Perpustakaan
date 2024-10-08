@@ -32,6 +32,7 @@ if (pilihan == 1) {
                 cout << "3. Layangan Putus " << endl;
                 cout << "4. Laut Bercerita " << endl;
                 cout << "5. Laskar Pelangi " << endl;
+                cout << endl;
             }
             
         } else if (pilihan == 2) {
@@ -44,6 +45,21 @@ if (pilihan == 1) {
                 cout << "5. Laskar Pelangi " << endl;
                 cin.ignore();
                 getline(cin, buku[jumlahBuku].judul);
+cout << "~ Masukkan Nama Anda ~: ";
+                getline(cin, buku[jumlahBuku].peminjaman);
+                cout << "~ Masukkan Tanggal Peminjaman ~: ";
+                getline(cin, buku[jumlahBuku].peminjaman);
+                jumlahBuku++;
+                cout << "Buku '" << buku[jumlahBuku - 1].judul << "' berhasil dipinjam" << endl;
+            }
+        } else if (pilihan != 3) {
+            cout << "Oopss...Opsi tidak valid. Silakan coba lagi!";
+        }
+    } while (pilihan != 3);
+
+    cout << "Terima kasih! Sampai jumpa di perpustakaan!:))";
+    return 0;
+}
 
 
 
