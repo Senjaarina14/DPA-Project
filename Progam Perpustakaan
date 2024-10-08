@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-using namespacce std;
+using namespace std;
 
 const int MAX_BUKU = 5;
 
@@ -15,7 +15,7 @@ int main(){
   int jumlahBuku = 0;
   int pilihan;
 
-  cout << ".....Selamat Datang di Perpustakaan....." <<< endl;
+  cout << ".....Selamat Datang di Perpustakaan....." << endl;
 
   do{
     cout << "======== Menu Perpustakaan ========" << endl;
