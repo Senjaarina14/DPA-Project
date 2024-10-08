@@ -1,58 +1,25 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
+using namespacce std;
 
 const int MAX_BUKU = 5;
 
-struct Buku{
+struct Buku {
   string judul;
   string peminjaman;
 };
 
 int main(){
-  Buku buku[MAX_BUKU};
+  Buku buku[MAX_BUKU];
   int jumlahBuku = 0;
   int pilihan;
 
-do{
-  cout << "......Selamat Datang di Program Perpustakaan......" << endl;
-  cout << "======== Menu Perpustakaan ======== "
-  cout << "1. Tampilkan Daftar Buku" << endl;
-  cout << "2. Pilih Buku" << endl;
-  cout << "3. Keluar" << endl;
-  cin >> pilihan
+  cout << ".....Selamat Datang di Perpustakaan....." <<< endl;
 
- if (pilihan == 1) {
-            if (jumlahBuku < MAX_BUKU) {
-                cout << "Daftar Buku: " << endl;
-                cout << "1. Pulang " << endl;
-                cout << "2. Hujan " << endl;
-                cout << "3. Pergi " << endl;
-                cout << "4. Bumi " << endl;
-                cout << "5. Laskar Pelangi " << endl;
-                cout << endl;
-            }
- } else if (pilihan == 2) {
-            if (jumlahBuku == 0) {
-                cout << "-----Silahkan Pilih Buku-----: " << endl;
-                cout << "1. Pulang " << endl;
-                cout << "2. Hujan " << endl;
-                cout << "3. Pergi " << endl;
-                cout << "4. Bumi " << endl;
-                cout << "5. Laskar Pelangi " << endl;
-                cin.ignore();
-                getline(cin, buku[jumlahBuku].judul);
-                cout << "Masukkan tanggal peminjaman: ";
-                getline(cin, buku[jumlahBuku].peminjaman);
-                jumlahBuku++;
-                cout << "Buku '" << buku[jumlahBuku - 1].judul << "' berhasil dipinjam" << endl;
-            }
- } else if (pilihan != 3) {
-            cout << "Opsi tidak valid. Silakan coba lagi";
-        }
-    } while (pilihan != 3);
-
-    cout << "Terima kasih! Sampai jumpa di perpustakaan!:D";
-    return 0;
-}
+  do{
+    cout << "======== Menu Perpustakaan ========" << endl;
+    cout << "1. Tampilkan Daftar Buku" << endl;
+    cout << "2. Pilih Buku" << endl;
+    cout << "3. Keluar" << endl;
+    cin >> pilihan;
